@@ -43,15 +43,47 @@ body
 }
 .categories p{
     background-color: #923CDC;
+    border: solid #923CDC 1px;
     color: white;
     padding: 6px;
     border-radius: 30px;
     padding-left: 12px;
     padding-right: 12px;
 }
+.categories p:hover{
+    background-color: #ffffff;
+    border: solid #923CDC 1px;
+color: #923CDC;
+cursor: pointer;
+
+}
 .sale-image img{
     width: 100%;
    
+}
+.sale-image__offer{
+    width: 35%;
+    border: solid rgb(111, 111, 111);
+    padding: 2%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    background-color: aliceblue;
+    border-radius: 6px;
+    animation-name: zoom;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+transform: scale(0);
+opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommended{
 padding: 10px;
